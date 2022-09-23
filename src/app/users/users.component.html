@@ -1,0 +1,20 @@
+<h1>Users Listing</h1>
+<br/>
+<table class="table border">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">First</th>
+        <th scope="col">Last</th>
+        <th scope="col">Handle</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let usersDel of usersData">
+        <th scope="row">{{usersDel.id}}</th>
+        <td>{{usersDel.name}}</td>
+        <td>{{usersDel.email}}</td>
+        <td>{{usersDel.body}}</td>
+      </tr>
+    </tbody>
+  </table>
